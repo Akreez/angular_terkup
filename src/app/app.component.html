@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Kúp</h1>
+  <p>Kör alapú kúp térfogatának számítása</p>
+
+  <div>
+    <div>
+      <label for="radius" class="form-label">Sugár:</label>
+      <input type="number" [(ngModel)]="radius" class="form-control">
+    </div>
+
+    <div>
+      <label for="height" class="form-label">Magasság:</label>
+      <input type="number" [(ngModel)]="height" class="form-control">
+    </div>
+
+    <div>
+      <button class="btn btn-primary mt-2" (click)="startCalc()">Számít</button>
+    </div>
+
+    <div>
+      <label for="volume" class="form-label mt-5">Térfogat:</label>
+      <input type="number" [(ngModel)]="volume" class="form-control" readonly>
+    </div>
+  </div>
+
+</div>
